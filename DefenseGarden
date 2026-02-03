@@ -1,0 +1,32 @@
+public class DefenseGarden {
+    private String gardenName;
+    private GardenStrategist strategist;   
+    private List<DefensePlant> plants;      
+
+    public DefenseGarden(String gardenName, GardenStrategist strategist) {
+        this.gardenName = gardenName;
+        this.strategist = strategist;
+        this.plants = new ArrayList<>();
+    }
+
+    public void deployPlant(DefensePlant plant) {
+        plants.add(plant);
+    }
+
+    public String identifyRole() {
+        return "I am the DefenseGarden class. I manage plant-based defenses against threats.";
+    }
+
+    public String generateDefenseStatus() {
+        String status = identifyRole() + "\n";
+        status += strategist.identifyRole() + "\n";
+        status += strategist.planDefense() + "\n";
+
+        for (DefensePlant plant : plants) {
+            status += plant.identifyRole() +
+                      " Type: " + plant.getPlantType() + "\n";
+        }
+
+        return status;
+    }
+}
