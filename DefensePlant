@@ -1,4 +1,4 @@
-class DefensePlant {
+public class DefensePlant {
     private String plantType;
 
     public DefensePlant(String plantType) {
