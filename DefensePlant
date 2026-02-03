@@ -8,3 +8,8 @@ class DefensePlant {
     public String getPlantType() {
         return plantType;
     }
+
+    public String identifyRole() {
+        return "I am the DefensePlant class. I represent a plant used to defend the garden.";
+    }
+}
