@@ -1,0 +1,16 @@
+public class GardenStrategist {
+    private String strategistName;
+
+    public GardenStrategist(String strategistName) {
+        this.strategistName = strategistName;
+    }
+
+    public String planDefense() {
+        return strategistName + " is planning the garden's defense strategy.";
+    }
+
+    public String identifyRole() {
+        return "I am the GardenStrategist class. I coordinate plant deployment and defense planning.";
+
+    }
+}
