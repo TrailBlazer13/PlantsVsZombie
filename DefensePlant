@@ -1,0 +1,10 @@
+class DefensePlant {
+    private String plantType;
+
+    public DefensePlant(String plantType) {
+        this.plantType = plantType;
+    }
+
+    public String getPlantType() {
+        return plantType;
+    }
