@@ -1,1 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
 
+        GardenStrategist strategist = new GardenStrategist("Crazy Dave");
+        DefenseGarden garden = new DefenseGarden("Frontyard Defense", strategist);
+
+        garden.deployPlant(new DefensePlant("Peashooter"));
+        garden.deployPlant(new DefensePlant("Sunflower"));
+        garden.deployPlant(new DefensePlant("Wall-nut"));
+
+        System.out.println(garden.generateDefenseStatus());
+    }
+}
